@@ -28,8 +28,19 @@ mvn package  (wrap everything to `packaging` type defined in pom file)
 mvn install  (to local directory)  
 
   to ~/.m2/repository  
-  stores artifact to groupId/artifactId/version
-  why: avoid duplication
+  stores artifact to groupId/artifactId/version  
+  why: avoid duplication  
  
 mvn deploy  (to remote directory)  
 
+Dependencies
+--
+groupId  
+artifactId  
+version  
+
+Packaging types
+--
+pom (description of dep - springboot massively uses this )   
+jar, war, ear, (actually is glorified zip file)    
+maven-plugin  
